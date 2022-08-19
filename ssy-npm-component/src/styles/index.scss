@@ -1,0 +1,64 @@
+
+@import './element-ui.scss';
+
+$baseWidth: 1920 !default;
+$baseHeight: 1080 !default;
+
+@function calcvw($px) {
+  @return ($px / $baseWidth) * 100vw;
+}
+
+@function calcvh($px) {
+  @return ($px / $baseHeight) * 100vh;
+}
+// html,
+// body{
+//     height: 100%;
+//     width: 100%;
+// }
+.myColumn {
+    .cell {
+       overflow:inherit;
+     }
+   }
+.el-message__icon {
+    font-size: 26px;
+}
+
+
+body .el-table th.gutter{
+    display: table-cell!important;
+  }
+body{
+    div::-webkit-scrollbar {
+        width: calcvw(6);
+        height: calcvw(6);
+    }
+    div::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        -webkit-box-shadow: inset 0 0 5px rgba(15, 33, 68, 0.2);
+        box-shadow: inset 0 0 5px rgba(199, 206, 240, 0.2);
+        background: #374F85;
+    }
+    div::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 5px rgba(15, 33, 68, 0.2);
+        box-shadow: inset 0 0 5px rgba(199, 206, 240, 0.2);
+        border-radius: 0;
+        background: rgba(0,0,0,0.1);
+    }
+}
+body::-webkit-scrollbar {
+    width: calcvw(6);
+}
+body::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 5px rgba(15, 33, 68, 0.2);
+    box-shadow: inset 0 0 5px rgba(199, 206, 240, 0.2);
+    background: rgba(0,0,0,0.2);
+}
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 5px rgba(15, 33, 68, 0.2);
+    box-shadow: inset 0 0 5px rgba(199, 206, 240, 0.2);
+    border-radius: 0;
+    background: rgba(0,0,0,0.1);
+}
