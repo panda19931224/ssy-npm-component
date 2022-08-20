@@ -4,4 +4,17 @@ import newPortalNav from './pages/components/top'
 let myLibs = {}
 
 myLibs.Alert = Alert
-export default {myLibs, newPortalNav}
+const components = {
+  newPortalNav
+}
+const methods = {
+  Alert
+}
+const install = (Vue) => {
+  // 遍历注册全局组件
+  Object.keys(components).forEach((key) => {
+    Vue.component(components[key].name, components[key])
+  })
+  Vue.prototype.$commonMethods = methods
+}
+export default { myLibs, install }

@@ -14,6 +14,9 @@ export default {
   mounted () {
   },
   methods: {
+    toLink () { 
+      // todo
+    }
   }
 }
 </script>
