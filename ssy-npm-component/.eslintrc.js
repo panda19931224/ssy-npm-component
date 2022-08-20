@@ -69,7 +69,7 @@ module.exports = {
       "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
     },
     "editor.codeActionsOnSave": {
-      "source.fixAll.eslint": true
+      // "source.fixAll.eslint": true
     },
     "bracketPairColorizer.depreciation-notice": false // 两个选择器中是否换行
   }
