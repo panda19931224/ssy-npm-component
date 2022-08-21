@@ -15,7 +15,7 @@ export default {
   },
   methods: {
     toLink () {
-      // todo
+      // todos
     }
   }
 }

@@ -11,7 +11,7 @@ module.exports = {
   extends: [
     // https://github.com/vuejs/eslint-plugin-vue#priority-a-essential-error-prevention
     // consider switching to `plugin:vue/strongly-recommended` or `plugin:vue/recommended` for stricter rules.
-    'plugin:vue/essential', 
+    'plugin:vue/essential',
     // https://github.com/standard/standard/blob/master/docs/RULES-en.md
     'standard'
   ],
@@ -69,7 +69,7 @@ module.exports = {
       "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
     },
     "editor.codeActionsOnSave": {
-      "source.fixAll.eslint": true
+      // "source.fixAll.eslint": true
     },
     "bracketPairColorizer.depreciation-notice": false // 两个选择器中是否换行
   }
