@@ -1,6 +1,6 @@
 let Alert = {
   show: () => {
-    alert('纸飞机66656')
+    alert('纸飞机666')
   }
 }
 
