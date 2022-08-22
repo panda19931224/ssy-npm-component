@@ -1,6 +1,6 @@
 
 import Alert from './pages/components/Alert'
-import newPortalNav from './pages/components/top'
+import newPortalNav from './pages/components/top/top.vue'
 let myLibs = {}
 
 myLibs.Alert = Alert
